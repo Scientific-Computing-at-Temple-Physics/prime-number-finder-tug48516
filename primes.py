@@ -15,4 +15,19 @@ This code should find and output all prime numbers between (and including) the n
 If no prime numbers are found in that range, it should print a statement to the user.
 Now we end the comment with triple quotes."""
 
-# The rest is up to you!
+# The rest is up to you'
+x1=eval(x1)
+x2=eval(x2)
+p="is prime"
+for A in range(x1,x2):
+    p="is prime"
+    if A < 2:
+        print false
+    if A > 2:
+        for i in range(2,A-1):
+            if A % i == 0:
+                print(A,"not prime")
+                p="not prime"
+                break
+        if p=="is prime":
+            print(A,"is prime")
